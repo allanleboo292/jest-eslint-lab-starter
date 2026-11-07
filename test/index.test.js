@@ -1,7 +1,4 @@
-
 const { capitalizeWords, filterActiveUsers, logAction } = require('../index');
-
-// Tests for capitalizeWords
 describe('capitalizeWords', () => {
     test('capitalizes the first letter of each word', () => {
         expect(capitalizeWords('hello world')).toBe('Hello World');
@@ -19,8 +16,7 @@ describe('capitalizeWords', () => {
         expect(capitalizeWords('javascript')).toBe('Javascript');
     });
 });
-
-// Tests for filterActiveUsers
+rs
 describe('filterActiveUsers', () => {
     test('returns only active users', () => {
         const users = [
@@ -49,7 +45,6 @@ describe('filterActiveUsers', () => {
     });
 });
 
-// Tests for logAction
 describe('logAction', () => {
     test('generates the correct log message', () => {
         const result = logAction('login', 'Alice');
